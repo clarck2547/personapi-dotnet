@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\lab 1\\personapi-dotnet\\personapi-dotnet.csproj": {}
+    "C:\\Users\\andre\\source\\repos\\personapi-dotnet\\personapi-dotnet\\personapi-dotnet.csproj": {}
   },
   "projects": {
-    "D:\\lab 1\\personapi-dotnet\\personapi-dotnet.csproj": {
+    "C:\\Users\\andre\\source\\repos\\personapi-dotnet\\personapi-dotnet\\personapi-dotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\lab 1\\personapi-dotnet\\personapi-dotnet.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\personapi-dotnet\\personapi-dotnet\\personapi-dotnet.csproj",
         "projectName": "personapi-dotnet",
-        "projectPath": "D:\\lab 1\\personapi-dotnet\\personapi-dotnet.csproj",
-        "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
-        "outputPath": "D:\\lab 1\\personapi-dotnet\\obj\\",
+        "projectPath": "C:\\Users\\andre\\source\\repos\\personapi-dotnet\\personapi-dotnet\\personapi-dotnet.csproj",
+        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andre\\source\\repos\\personapi-dotnet\\personapi-dotnet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Programas\\Microsoft\\VisualStudio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -64,9 +64,17 @@
               "target": "Package",
               "version": "[9.0.4, )"
             },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.6.24, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[8.1.1, )"
             }
           },
           "imports": [
@@ -88,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "D:\\Programas\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
