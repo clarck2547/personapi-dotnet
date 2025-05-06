@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using personapi_dotnet.Models.Entities;
 using personapi_dotnet.Repositories;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using personapi_dotnet.Models.DTOs;
 
 namespace personapi_dotnet.Controllers
 {
@@ -21,7 +24,14 @@ namespace personapi_dotnet.Controllers
         public async Task<IActionResult> GetAll()
         {
             var telefonos = await _repo.GetAllAsync();
-            return Ok(telefonos);
+            var dtoList = telefonos.Select(t => new TelefonoDTO
+            {
+                Num = t.Num,
+                Oper = t.Oper,
+                Duenio = t.Duenio
+            });
+
+            return Ok(dtoList);
         }
 
         // GET: api/Telefono/3001234567
@@ -30,47 +40,60 @@ namespace personapi_dotnet.Controllers
         {
             var telefono = await _repo.GetByIdAsync(num);
             if (telefono == null) return NotFound();
-            return Ok(telefono);
+
+            var dto = new TelefonoDTO
+            {
+                Num = telefono.Num,
+                Oper = telefono.Oper,
+                Duenio = telefono.Duenio
+            };
+
+            return Ok(dto);
         }
 
         // POST: api/Telefono
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Telefono telefono)
+        public async Task<IActionResult> Create([FromBody] TelefonoDTO dto)
         {
-            // Verificar si ya existe
-            var existente = await _repo.GetByIdAsync(telefono.Num);
+            var existente = await _repo.GetByIdAsync(dto.Num);
             if (existente != null)
-            {
                 return Conflict("El número de teléfono ya está registrado.");
-            }
 
-            var persona = await _repo.GetPersonaByIdAsync(telefono.Duenio);
+            var persona = await _repo.GetPersonaByIdAsync(dto.Duenio);
             if (persona == null)
-            {
                 return BadRequest("La persona asignada no existe.");
-            }
 
-            telefono.DuenioNavigation = persona;
+            var telefono = new Telefono
+            {
+                Num = dto.Num,
+                Oper = dto.Oper,
+                Duenio = dto.Duenio,
+                DuenioNavigation = persona
+            };
+
             await _repo.AddAsync(telefono);
-            return CreatedAtAction(nameof(GetById), new { num = telefono.Num }, telefono);
+
+            return CreatedAtAction(nameof(GetById), new { num = dto.Num }, dto);
         }
 
         // PUT: api/Telefono/3001234567
         [HttpPut("{num}")]
-        public async Task<IActionResult> Update(string num, [FromBody] Telefono telefono)
+        public async Task<IActionResult> Update(string num, [FromBody] TelefonoDTO dto)
         {
-            if (num != telefono.Num)
-            {
+            if (num != dto.Num)
                 return BadRequest("El número de la URL no coincide con el del cuerpo.");
-            }
 
-            var persona = await _repo.GetPersonaByIdAsync(telefono.Duenio);
+            var persona = await _repo.GetPersonaByIdAsync(dto.Duenio);
             if (persona == null)
-            {
                 return BadRequest("La persona asignada no existe.");
-            }
 
-            telefono.DuenioNavigation = persona;
+            var telefono = new Telefono
+            {
+                Num = dto.Num,
+                Oper = dto.Oper,
+                Duenio = dto.Duenio,
+                DuenioNavigation = persona
+            };
 
             try
             {
