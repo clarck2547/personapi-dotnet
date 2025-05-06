@@ -1,0 +1,333 @@
+[
+  {
+    "ContainingType": "personapi_dotnet.Controllers.EstudioApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/EstudioApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.EstudioApiController",
+    "Method": "Create",
+    "RelativePath": "api/EstudioApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estudio",
+        "Type": "personapi_dotnet.Models.Entities.Estudio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.EstudioApiController",
+    "Method": "GetById",
+    "RelativePath": "api/EstudioApi/{idProf}/{ccPer}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProf",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ccPer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.EstudioApiController",
+    "Method": "Update",
+    "RelativePath": "api/EstudioApi/{idProf}/{ccPer}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProf",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ccPer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estudio",
+        "Type": "personapi_dotnet.Models.Entities.Estudio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.EstudioApiController",
+    "Method": "Delete",
+    "RelativePath": "api/EstudioApi/{idProf}/{ccPer}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProf",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ccPer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.PersonaApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/PersonaApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.PersonaApiController",
+    "Method": "Create",
+    "RelativePath": "api/PersonaApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "persona",
+        "Type": "personapi_dotnet.Models.Entities.Persona",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.PersonaApiController",
+    "Method": "GetById",
+    "RelativePath": "api/PersonaApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.PersonaApiController",
+    "Method": "Update",
+    "RelativePath": "api/PersonaApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "persona",
+        "Type": "personapi_dotnet.Models.Entities.Persona",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.PersonaApiController",
+    "Method": "Delete",
+    "RelativePath": "api/PersonaApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.ProfesionApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/ProfesionApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.ProfesionApiController",
+    "Method": "Create",
+    "RelativePath": "api/ProfesionApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profesion",
+        "Type": "personapi_dotnet.Models.Entities.Profesion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.ProfesionApiController",
+    "Method": "GetById",
+    "RelativePath": "api/ProfesionApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.ProfesionApiController",
+    "Method": "Update",
+    "RelativePath": "api/ProfesionApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "profesion",
+        "Type": "personapi_dotnet.Models.Entities.Profesion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.ProfesionApiController",
+    "Method": "Delete",
+    "RelativePath": "api/ProfesionApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.TelefonoApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/TelefonoApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.TelefonoApiController",
+    "Method": "Create",
+    "RelativePath": "api/TelefonoApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telefono",
+        "Type": "personapi_dotnet.Models.Entities.Telefono",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.TelefonoApiController",
+    "Method": "GetById",
+    "RelativePath": "api/TelefonoApi/{num}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.TelefonoApiController",
+    "Method": "Update",
+    "RelativePath": "api/TelefonoApi/{num}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "telefono",
+        "Type": "personapi_dotnet.Models.Entities.Telefono",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.TelefonoApiController",
+    "Method": "Delete",
+    "RelativePath": "api/TelefonoApi/{num}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
