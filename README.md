@@ -31,6 +31,8 @@ Abra una terminal y ejecute:
 git clone https://github.com/tu-usuario/personapi-dotnet.git
 cd personapi-dotnet
 ```
-
 ### 3. Ejecutar
+Crear la bdd con el ddl dado.
+
+### 4. Ejecutar
 Asegurese de tener los prerrequisitos. Desde cuaquier controller, en la parte de arriba del Visual Studio dar en el boton verde ejecutar y esperar a que se abra el navegador.
